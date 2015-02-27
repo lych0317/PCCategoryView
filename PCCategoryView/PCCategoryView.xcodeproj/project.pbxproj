@@ -14,6 +14,8 @@
 		484FFB2B1A8CBCAD001A1AB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484FFB2A1A8CBCAD001A1AB1 /* Images.xcassets */; };
 		484FFB2E1A8CBCAD001A1AB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484FFB2C1A8CBCAD001A1AB1 /* LaunchScreen.xib */; };
 		484FFB3A1A8CBCAD001A1AB1 /* PCCategoryViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 484FFB391A8CBCAD001A1AB1 /* PCCategoryViewTests.m */; };
+		484FFB461A8DDCE3001A1AB1 /* PCCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484FFB451A8DDCE3001A1AB1 /* PCCategoryView.m */; };
+		484FFB491A8DDD1B001A1AB1 /* PCCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 484FFB481A8DDD1B001A1AB1 /* PCCategoryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		484FFB331A8CBCAD001A1AB1 /* PCCategoryViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCCategoryViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484FFB381A8CBCAD001A1AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484FFB391A8CBCAD001A1AB1 /* PCCategoryViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCategoryViewTests.m; sourceTree = "<group>"; };
+		484FFB441A8DDCE3001A1AB1 /* PCCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCategoryView.h; sourceTree = "<group>"; };
+		484FFB451A8DDCE3001A1AB1 /* PCCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCategoryView.m; sourceTree = "<group>"; };
+		484FFB471A8DDD1B001A1AB1 /* PCCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCategoryCell.h; sourceTree = "<group>"; };
+		484FFB481A8DDD1B001A1AB1 /* PCCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCategoryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		484FFB111A8CBCAD001A1AB1 = {
 			isa = PBXGroup;
 			children = (
+				484FFB431A8DDCC2001A1AB1 /* Classes */,
 				484FFB1C1A8CBCAD001A1AB1 /* PCCategoryView */,
 				484FFB361A8CBCAD001A1AB1 /* PCCategoryViewTests */,
 				484FFB1B1A8CBCAD001A1AB1 /* Products */,
@@ -117,6 +124,17 @@
 				484FFB381A8CBCAD001A1AB1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		484FFB431A8DDCC2001A1AB1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				484FFB441A8DDCE3001A1AB1 /* PCCategoryView.h */,
+				484FFB451A8DDCE3001A1AB1 /* PCCategoryView.m */,
+				484FFB471A8DDD1B001A1AB1 /* PCCategoryCell.h */,
+				484FFB481A8DDD1B001A1AB1 /* PCCategoryCell.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +240,8 @@
 				484FFB261A8CBCAD001A1AB1 /* ViewController.m in Sources */,
 				484FFB231A8CBCAD001A1AB1 /* AppDelegate.m in Sources */,
 				484FFB201A8CBCAD001A1AB1 /* main.m in Sources */,
+				484FFB491A8DDD1B001A1AB1 /* PCCategoryCell.m in Sources */,
+				484FFB461A8DDCE3001A1AB1 /* PCCategoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,6 +436,7 @@
 				484FFB3F1A8CBCAD001A1AB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		484FFB401A8CBCAD001A1AB1 /* Build configuration list for PBXNativeTarget "PCCategoryViewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				484FFB421A8CBCAD001A1AB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
