@@ -134,7 +134,8 @@
 				484FFB471A8DDD1B001A1AB1 /* PCCategoryCell.h */,
 				484FFB481A8DDD1B001A1AB1 /* PCCategoryCell.m */,
 			);
-			path = Classes;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
