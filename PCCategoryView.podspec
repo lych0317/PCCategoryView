@@ -7,4 +7,5 @@ Pod::Spec.new do |s|
   s.author       = { "liyuanchao" => "liyuanchao@126.com" }
   s.source       = { :git => "https://github.com/lych0317/PCCategoryView.git", :tag => "v0.0.1" }
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.framework     = "UIKit"
 end
